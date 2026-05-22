@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <section class="game-card">
+      <h1>Rock Paper Scissors</h1>
+      <p class="instructions">Choose your move and try to beat the computer.</p>
+
+      <div class="choice-buttons">
+        <button id="rockButton" class="choice-button">🪨 Rock</button>
+        <button id="paperButton" class="choice-button">📄 Paper</button>
+        <button id="scissorsButton" class="choice-button">✂️ Scissors</button>
+      </div>
+
+      <section class="results">
+        <p id="playerChoice" class="choice-display">You chose: -</p>
+        <p id="computerChoice" class="choice-display">Computer chose: -</p>
+        <p id="resultMessage" class="result-message" aria-live="polite">Choose a move to start playing.</p>
+      </section>
+
+      <section class="stats">
+        <h2>Stats</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">Wins</span>
+            <span id="wins" class="stat-value">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Losses</span>
+            <span id="losses" class="stat-value">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Ties</span>
+            <span id="ties" class="stat-value">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Total Games</span>
+            <span id="totalGames" class="stat-value">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Current Streak</span>
+            <span id="currentStreak" class="stat-value">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Best Streak</span>
+            <span id="bestStreak" class="stat-value">0</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="history">
+        <h2>Recent Games</h2>
+        <ul id="historyList" class="history-list"></ul>
+      </section>
+
+      <button id="resetButton" class="reset-button">Reset Stats</button>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
